@@ -1,6 +1,6 @@
 # SoybeanGWAS
 
-Genome-wide association study of thousand-seed weight (TSW) and seed protein content (SPC)
+Genome-wide association study and genomic prediction of thousand-seed weight (TSW) and seed protein content (SPC)
 in the Khabarovsk soybean diversity panel, Russian Far East. Field trials 2017-2024.
 Code for a manuscript in preparation. Scripts are added as each step of the analysis is finalised.
 
@@ -26,6 +26,7 @@ repository root as the project folder.
 | 03 | | population structure and linkage disequilibrium | to come |
 | 04 | | GWAS | to come |
 | 05 | | post-GWAS | to come |
+| 06 | | genomic prediction | to come |
 
 ## Requirements
 
