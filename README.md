@@ -7,7 +7,7 @@ Code for a manuscript in preparation. Scripts are added as each step of the anal
 ## Layout
 
 ```
-Paper1_TSW_SPC/
+Paper_TSW_SPC/
   scripts/     analysis scripts, numbered in pipeline order
   data/        raw/ inputs and processed/ files read by later steps (not in the repository yet)
   results/     figures and tables written by the scripts (not in the repository yet)

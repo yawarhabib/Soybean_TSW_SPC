@@ -36,7 +36,7 @@ library(here)
 
 
 ### Load the data from working environment
-season_means <- read.csv(here("Paper1_TSW_SPC/data/raw/phenotype/TSW_SPC_season_means.csv"), header = TRUE)
+season_means <- read.csv(here("Paper_TSW_SPC/data/raw/phenotype/TSW_SPC_season_means.csv"), header = TRUE)
 View(season_means)
 
 str(season_means)
@@ -71,7 +71,7 @@ Origin <- season_means %>%
 nrow(Origin)
 
 ## Save the Origin information
-write.csv(Origin, here("Paper1_TSW_SPC/data/processed/Origin_Accessions.csv"), row.names = FALSE)
+write.csv(Origin, here("Paper_TSW_SPC/data/processed/Origin_Accessions.csv"), row.names = FALSE)
 
 # Basic structure check
 str(season_means)
@@ -184,7 +184,7 @@ season_plot <- ggplot(trait_long, aes(as.numeric(Year), Value, group = Year, col
         axis.ticks       = element_line(colour = "black", linewidth = 0.7),
         axis.text        = element_text(colour = "black"))
 
-ggsave(here("Paper1_TSW_SPC/results/01_phenotypes/Fig_traits_by_season.tiff"), season_plot,
+ggsave(here("Paper_TSW_SPC/results/01_phenotypes/Fig_traits_by_season.tiff"), season_plot,
        width = 17, height = 14, units = "cm", dpi = 600, compression = "lzw")
 
 
@@ -255,8 +255,8 @@ Protein_data %>%
   count(Genotype) %>%
   filter(n > 1)
 
-write.csv(BLUE_Prot, here("Paper1_TSW_SPC/data/processed/BLUE_protein_GWAS.csv"), row.names = FALSE)
-write.csv(BLUE_TSW,  here("Paper1_TSW_SPC/data/processed/BLUE_tsw_GWAS.csv"),     row.names = FALSE)
+write.csv(BLUE_Prot, here("Paper_TSW_SPC/data/processed/BLUE_protein_GWAS.csv"), row.names = FALSE)
+write.csv(BLUE_TSW,  here("Paper_TSW_SPC/data/processed/BLUE_tsw_GWAS.csv"),     row.names = FALSE)
 
 ################ Phenotypic correlation of the BLUEs
 
@@ -463,5 +463,5 @@ diag_plot <- (p_fit / p_qq) &
         axis.ticks = element_line(colour = "black", linewidth = 0.7),
         axis.text  = element_text(colour = "black"))
 
-ggsave(here("Paper1_TSW_SPC/results/01_phenotypes/FigS_residual_diagnostics.tiff"), diag_plot,
+ggsave(here("Paper_TSW_SPC/results/01_phenotypes/FigS_residual_diagnostics.tiff"), diag_plot,
        width = 17, height = 14, units = "cm", dpi = 600, compression = "lzw")
