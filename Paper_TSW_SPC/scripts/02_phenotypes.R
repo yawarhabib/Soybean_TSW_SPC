@@ -1,5 +1,5 @@
 # ==================================================================================================
-#                  Script 01 - Phenotypic analysis of the Khabarovsk soybean panel
+#                  Script 02 - Phenotypic analysis of the Khabarovsk soybean panel
 #                Field trials (2017–2024): thousand-seed weight (TSW)
 #                                 and seed protein content (SPC)
 # --------------------------------------------------------------------------------------------------
@@ -184,7 +184,7 @@ season_plot <- ggplot(trait_long, aes(as.numeric(Year), Value, group = Year, col
         axis.ticks       = element_line(colour = "black", linewidth = 0.7),
         axis.text        = element_text(colour = "black"))
 
-ggsave(here("Paper_TSW_SPC/results/01_phenotypes/Fig_traits_by_season.tiff"), season_plot,
+ggsave(here("Paper_TSW_SPC/results/02_phenotypes/Fig_traits_by_season.tiff"), season_plot,
        width = 17, height = 14, units = "cm", dpi = 600, compression = "lzw")
 
 
@@ -463,5 +463,5 @@ diag_plot <- (p_fit / p_qq) &
         axis.ticks = element_line(colour = "black", linewidth = 0.7),
         axis.text  = element_text(colour = "black"))
 
-ggsave(here("Paper_TSW_SPC/results/01_phenotypes/FigS_residual_diagnostics.tiff"), diag_plot,
+ggsave(here("Paper_TSW_SPC/results/02_phenotypes/FigS_residual_diagnostics.tiff"), diag_plot,
        width = 17, height = 14, units = "cm", dpi = 600, compression = "lzw")

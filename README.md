@@ -21,16 +21,17 @@ repository root as the project folder.
 
 | Step | Script | Content | Status |
 |------|--------|---------|--------|
-| 01 | `01_Manuscript_Analysis_Phenotypes.R` | descriptive statistics; outlier screen (Bernal-Vasquez et al. 2016); genotype BLUEs with season as a fixed effect; entry-mean and Cullis heritability; bivariate model for the genetic correlation between TSW and SPC; residual diagnostics | done |
-| 02 | | genotype quality control | to come |
-| 03 | | population structure and linkage disequilibrium | to come |
-| 04 | | GWAS | to come |
-| 05 | | post-GWAS | to come |
-| 06 | | genomic prediction | to come |
+| 01 | `01_weather.R` | growing-season weather at the trial site: season summary of temperature and precipitation, per-season climographs with the crop cycle (Figure 1) | done |
+| 02 | `02_phenotypes.R` | descriptive statistics; outlier screen (Bernal-Vasquez et al. 2016); genotype BLUEs with season as a fixed effect; entry-mean and Cullis heritability; bivariate model for the genetic correlation between TSW and SPC; residual diagnostics | done |
+| 03 | | genotype quality control | to come |
+| 04 | | population structure and linkage disequilibrium | to come |
+| 05 | | GWAS | to come |
+| 06 | | post-GWAS | to come |
+| 07 | | genomic prediction | to come |
 
 ## Requirements
 
-R 4.6.1 with dplyr, ggplot2, tidyr, lme4, emmeans, sommer, patchwork and here.
+R 4.6.1 with dplyr, ggplot2, tidyr, lme4, emmeans, sommer, patchwork, zoo and here.
 
 ## Data
 

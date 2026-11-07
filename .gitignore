@@ -30,7 +30,8 @@ README_private.md
 
 # only finalised scripts are published; add a !line per script when it is final
 Paper_TSW_SPC/scripts/*
-!Paper_TSW_SPC/scripts/01_Manuscript_Analysis_Phenotypes.R
+!Paper_TSW_SPC/scripts/01_weather.R
+!Paper_TSW_SPC/scripts/02_phenotypes.R
 
 # history of the private working copy before the public repository (2026-11-08)
 _old_git_*/
