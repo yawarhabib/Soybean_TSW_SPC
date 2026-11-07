@@ -1,0 +1,37 @@
+# --- not for the public repository ---
+.claude/
+Paper1_TSW_SPC/_superseded_2026-07/
+Paper1_TSW_SPC/_archive/
+# copyrighted papers
+Paper1_TSW_SPC/bibliography/*.pdf
+*.zip
+*.vcf.gz
+*.vcf
+*.hmp.txt
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*.RData
+Rplots.pdf
+
+# OS / editors
+.DS_Store
+Thumbs.db
+~$*
+
+# --- code only until submission: data, results and manuscript stay local ---
+Paper1_TSW_SPC/data/
+Paper1_TSW_SPC/results/
+Paper1_TSW_SPC/manuscript/
+Paper1_TSW_SPC/bibliography/
+README_private.md
+
+# only finalised scripts are published; add a !line per script when it is final
+Paper1_TSW_SPC/scripts/*
+!Paper1_TSW_SPC/scripts/01_Manuscript_Analysis_Phenotypes.R
+
+# history of the private working copy before the public repository (2026-11-08)
+_old_git_*/
+*.bundle

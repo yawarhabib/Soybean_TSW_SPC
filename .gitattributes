@@ -1,0 +1,19 @@
+* text=auto eol=lf
+*.R    text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.csv  text eol=lf
+*.bed  binary
+*.bim  text
+*.fam  text
+*.docx binary
+*.xlsx binary
+*.ods  binary
+*.pdf  binary
+*.png  binary
+*.tiff binary
+*.tif  binary
+*.gz   binary
+*.zip  binary
+*.pptx binary
+*.svg  text
