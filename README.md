@@ -1,4 +1,4 @@
-# SoybeanGWAS
+# Soybean_TSW_SPC
 
 Genome-wide association study and genomic prediction of thousand-seed weight (TSW) and seed protein content (SPC)
 in the Khabarovsk soybean diversity panel, Russian Far East. Field trials 2017-2024.
